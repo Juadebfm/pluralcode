@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  background-color: #2f1893;
+  color: #fff;
+  overflow-x: hidden !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  padding: 1.8rem 2.2rem;
+}
+
+.btn {
+  background-color: #482be7;
+  color: #fff;
+  padding: 0.4rem 1.3rem;
+  border-radius: 3rem;
+}
+
+.btn:hover {
+  background-color: #482be7b1;
+  cursor: pointer;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo span {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.navList ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+main {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main h1 {
+  font-weight: 700;
+  font-size: 4.5rem;
+  margin-bottom: 2rem;
+  height: 10.75rem;
+  width: 48rem;
+  text-align: center;
+  letter-spacing: -1px;
+}
+
+main p {
+  width: 28rem;
+  height: 6rem;
+  text-align: center;
+  line-height: 2rem;
+  margin-bottom: 2rem;
+}
+
+.mainCTA {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mainCTA .btn {
+  margin-bottom: 1rem;
+}
+
+.input input {
+  /* width: 21rem; */
+  height: 2rem;
+  border-radius: 6rem;
+  border: none;
+  outline: none;
+  padding-left: 10px;
+  width: 21rem;
+}
+
+:playing {
+  font-size: 1rem;
+  opacity: 0.6;
+}
+
+footer {
+  text-align: center;
+  opacity: 0.3;
+}
+
+@media (max-width: 40em) {
+  .container {
+    padding: 3rem 1.5rem;
+  }
+  nav {
+    font-size: 90%;
+  }
+  main h1 {
+    font-size: 3.3rem;
+    width: 100%;
+    text-align: center;
+  }
+  main p {
+    width: 18rem;
+    margin-bottom: 4rem;
+  }
+}
+@media (max-width: 43.75em) {
+  .navList ul li:nth-child(1),
+  .navList ul li:nth-child(2) {
+    display: none;
+  }
+  .logo {
+    font-size: 1.2rem;
+  }
+  .mainCTA {
+    margin-top: 2rem;
+  }
+  .input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .input input {
+    width: 16rem;
+  }
+  .input .btn {
+    width: 8rem;
+    text-align: center;
+    margin: auto;
+  }
+}
+
+@media (min-width: 640px) {
+  main .title h1 {
+    width: 100%;
+    height: 60%;
+  }
+}
